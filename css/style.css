@@ -1,0 +1,358 @@
+
+
+/* GENERAL */
+
+body{
+	margin: 0;
+}
+.container{
+	text-align: center;
+	width: 1170px;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.container--first{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+.contact__container{
+	margin: auto;
+    width: 830px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1{
+	margin-top: 16px;
+	width: 110px;
+}
+
+h2{
+	margin: 0;
+	color: #3f403e;
+	font-size: 120px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	letter-spacing: 6px;
+	line-height: 0.8;
+}
+
+h3{
+	padding-top: 72px;
+    padding-bottom: 46px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 34px;
+	color: #3f403e;
+	margin: 0;
+	letter-spacing: 6px;
+	line-height: 0.8;
+}
+
+h4{
+	line-height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 23px;
+	color: #30c989;
+	margin: 0;
+}
+
+span{
+	color: #30c989;
+}
+
+.main__bar{
+	height: 3px;
+	width: 197px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+	.main__bar--b{
+		background-color: #30c989;
+	}
+
+label{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	color: #3f403e;
+}
+
+/* HEADER */
+
+.header{
+	height: 100vh;
+	background-image: url(../images/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	.header__bar{
+		height: 110px;
+		background-color: #30c989;
+	}
+		.menu{
+			
+		}
+			.menu__list{
+				width: 400px;
+				padding-left: 0;
+				list-style: none;
+				display: flex;
+				justify-content: space-between;
+			}
+				.menu__item{
+
+				}
+					.menu__link{
+						font-size: 15px;
+						font-family: 'Nixie One', cursive;
+						font-weight: bolder;
+						color: #000;
+						text-decoration: none;
+						transition: all 300ms;
+					}
+					.menu__link:hover{
+						color: #fff;
+						padding-bottom: 10px;
+						border-bottom: 2px solid;
+						transition: all 300ms;
+					}
+	.header__content{
+		width: 100%;
+		height: 100vh;
+		background-color: rgba(255,255,255,0.85);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.header__text{
+			text-align: center;
+		}
+		.header__text p{
+			line-height: 1.5;
+			font-size: 25px;
+			font-family: 'Nixie One', cursive;
+		}
+
+/* MAIN */
+
+.about_me{
+	height: 800px;
+	background-color: #30c989;
+}
+	.about_me__i{
+		margin-top: 87px;
+		margin-right: 60px;
+		width: 450px;
+		border: 3px solid #fff;
+	}
+	.about_me__skills{
+		margin-bottom: 13px;
+		width: 450px;
+	}
+
+.service{
+	height: 550px;
+}
+	.service__menu{
+		margin-top: 87px;
+    	list-style: none;
+    	display: flex;
+    	justify-content: space-between;
+    	padding-left: 0;
+	}
+		.service__list{
+
+		}
+			.service__list i{
+				font-size: 120px;
+    			color: #3f403e;
+    			margin-bottom: 20px;
+			}
+			.service__buttom{
+				line-height: 5;
+				font-size: 12px;
+				font-family: 'Nixie One', cursive;
+				font-weight: bolder;
+				color: #fff;
+				text-decoration: none;
+				background-color: #3f403e;
+				padding: 10px 15px;
+				transition: all 300ms;
+			}
+				.service__buttom:hover{
+					color: #000;
+					background-color: #30c989;
+					transition: all 300ms;
+				}
+
+.portafolio{
+	height: 1530px;
+	background-color: #30c989;
+}
+	.porta__menu{
+		margin-top: 87px;
+		padding-left: 0;
+		width: 1170px;
+		height: 1170px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-content: space-between;
+	}
+		.porta__item{
+			background-color: #fff;
+			position: relative;
+			width: 370px;
+			height: 370px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			overflow: hidden;
+		}
+			.porta__item img{
+				width: 100%;
+				-webkit-transition: all 300ms;
+				transition: all 300ms;
+			}
+				.porta__item:hover img{
+					opacity: 0.5;
+					transform: scale(1.5);
+					transition: all 300ms;
+				}
+			.porta__h4{
+				width: 300px;
+				position: absolute;
+				text-align: center;
+				z-index: 10;
+			}
+				.porta__h4 h4{
+					opacity: 0;
+					transform: scale(0.3);
+					transition: all 300ms
+				}
+				.porta__item:hover h4{
+					opacity: 1;
+					transform: scale(1);
+					transition: all 300ms;
+				}
+			.porta__content{
+				width: 370px;
+				height: 370px;
+				position: absolute;
+				background-color: rgba(63,64,62,0.9);
+				top: 0;
+				opacity: 0;
+				transition: all 300ms;
+			}
+				.porta__content:hover{
+					opacity: 1;
+					transition: all 300ms;
+				}
+
+.contact{
+	height: 630px;
+}
+	form{
+		margin-top: 60px;
+		width: 370px;
+		text-align: left;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+		.form__box{
+			margin-top: 13px;
+			width: 157px;
+		    height: 34px;
+		    border-top: 2px solid #30c989;
+		    border-left: none;
+		    border-bottom: none;
+		    border-right: none;
+		    background-color: #edeef0;
+		    font-size: 15px;
+		    padding-left: 10px;
+		}
+		.form__box--last{
+			width: 360px;
+		    height: 113px;
+		}
+		.form__send{
+			font-family: 'Montserrat', sans-serif;
+		    font-size: 19px;
+		    color: #3f403e;
+		    border: none;
+		    background-color: #fff;
+		    transition: all 300ms;
+		}
+			.form__send:hover{
+				color: #30c989;
+				border-bottom: 2px solid;
+				transition: all 300ms;
+			}
+		.contact__text{
+			margin-top: 40px;
+			line-height: 4;
+			text-align: right;
+			font-size: 15px;
+			font-family: 'Nixie One', cursive;
+			font-weight: bolder;
+		}
+		.contact__icons{
+			line-height: 1;
+		}
+			.contact__icons a{
+				color: #3f403e;
+				font-size: 35px;
+				margin-left: 20px;
+				transition: all 300ms;
+			}
+			.contact__icons a:hover{
+				color: #30c989;
+				border-bottom: 2px solid;
+				transition: all 300ms;
+			}
+
+/* FOOTER */
+
+footer{
+	background-color: #30c989;
+	height: 250px;
+}
+		.footer__logo{
+			padding-top: 37px;
+			margin: auto;
+			display: block;
+			width: 110px;
+		}
+		.footer__menu{
+			width: 430px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 32px;
+			margin-bottom: 32px;
+			padding-left: 0;
+			list-style: none;
+			display: flex;
+			justify-content: space-between;
+		}
+			.footer__link{
+				font-size: 15px;
+				font-family: 'Nixie One', cursive;
+				font-weight: bold;
+				color: #000;
+				text-decoration: none;
+			}
+			.footer__link:hover{
+				color: #fff
+			}
+		.footer__p{
+			font-size: 14px;
+			font-family: 'Nixie One', cursive;
+			font-weight: bold;
+			color: #000;
+		}
+
